@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Quiet Element — 要素を非表示",
+  "version": "1.1.0",
+  "description": "選んだ要素だけをプレビューして非表示にする、サイト別の表示ルール管理ツール。",
+  "minimum_chrome_version": "120",
+  "permissions": ["activeTab", "scripting", "storage", "contextMenus"],
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_popup": "popup.html", "default_title": "Quiet Element"},
+  "options_page": "options.html",
+  "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'none'"}
+}

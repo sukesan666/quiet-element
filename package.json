@@ -1,0 +1,15 @@
+{
+  "name":"quiet-element",
+  "version":"1.1.0",
+  "private":true,
+  "license":"GPL-3.0-only",
+  "repository":{"type":"git","url":"https://github.com/sukesan666/quiet-element.git"},
+  "description":"Independent MV3 element picker; no production dependencies",
+  "scripts":{
+    "test":"node --test tests/model.cjs tests/worker.cjs tests/browser.cjs tests/runtime.cjs tests/ui.cjs tests/native-e2e.cjs",
+    "test:dom":"node --test tests/model.cjs tests/worker.cjs tests/browser.cjs tests/runtime.cjs tests/ui.cjs",
+    "test:native":"node --test tests/native-e2e.cjs",
+    "check":"node tools/check.cjs"
+  },
+  "devDependencies":{"playwright":"1.62.1"}
+}

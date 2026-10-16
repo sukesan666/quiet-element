@@ -1,0 +1,9 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quiet Element</title><link rel="stylesheet" href="ui.css"></head>
+<body class="popup"><header><span class="brand">QE</span><div><h1>Quiet Element</h1><p>見たくない要素を、ひとつずつ。</p></div></header>
+<main><h2 id="host">サイトを確認中…</h2><p id="status" role="status" aria-live="polite"></p>
+<button id="pick" class="primary">ページの要素を選ぶ</button>
+<section><h2>再訪問時の自動適用</h2><p id="permissionStatus"></p><button id="grant">このサイトで自動適用を許可</button><button id="revoke">このサイトへのアクセス許可を解除</button></section>
+<label class="switch"><input type="checkbox" id="global">拡張全体の非表示を有効にする</label>
+<section id="rules"></section><button id="manage">すべてのサイトのルールを管理</button>
+<p class="muted">確定前ならEscで取り消せます。再訪問時に隠れない場合は、アクセス許可を確認してください。</p></main>
+<script src="model.js"></script><script src="ui.js"></script></body></html>
